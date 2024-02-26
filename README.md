@@ -9,5 +9,5 @@ TBD
 ## Schedule
 |#|Topics|Date|
 |-|------|-------|
-|0|[Course Overview](slides/lecture0.pdf)|2/26|
+|0|[Course Overview](slides/lec0.pdf)|2/26|
 |TBD|TBD|
