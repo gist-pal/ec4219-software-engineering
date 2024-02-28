@@ -10,4 +10,4 @@ TBD
 |#|Topics|Date|
 |-|------|-------|
 |0|[Course Overview](slides/lec0.pdf)|2/26|
-|TBD|TBD|
+|1|[Introduction to Program Analysis](slides/lec1.pdf)|2/28|
