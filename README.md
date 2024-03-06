@@ -14,8 +14,9 @@ Our focus in this course is to study program analysis methods, which are fundame
 |0|[Course Overview](slides/lec0.pdf)|2/26|
 |1|[Introduction to Program Analysis](slides/lec1.pdf)|2/28|
 |2|Review |3/4|
-|3|Software Specifications |3/6|
+|3|[Fuzzing](slides/lec2.pdf) |3/6|
 
 ## References
-I sincerely appreciate the authors of the following materials, which greatly helped to improve the quality of this course.
-* Materials from [Software Analysis course](https://software-analysis-class.org) at UPenn
+I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
+* [CIS547:Software Analysis](https://software-analysis-class.org) course taught by Prof. Mayur Naik at UPenn
+* [AAA615:Formal Methods](https://prl.korea.ac.kr/courses/aaa615/2017) course taught by Prof. Hakjoo Oh at Korea University
