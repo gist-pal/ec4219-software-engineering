@@ -17,7 +17,10 @@ Our focus in this course is to study program analysis methods, which are fundame
 |3|[Fuzzing](slides/lec2.pdf) |3/6|
 |4|[Propositional Logic (1)](slides/lec3.pdf) |3/11|
 |5|[Propositional Logic (2)](slides/lec4.pdf) |3/13|
-|6|Propositional Logic (2) (Cont'd) |3/18|
+|6|Propositional Logic (3) (cont'd) |3/18|
+|7|[First-Order Logic (1)](slides/lec5.pdf) |3/20|
+|8|First-Order Logic (2) (cont'd) |3/25|
+|9|[First-Order Theories](slides/lec6.pdf) |3/27|
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
