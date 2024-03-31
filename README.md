@@ -8,6 +8,18 @@ Software Engineering is an engineering discipline that is concerned with all asp
 In particular, SW validation is highly important in the SW process due to the prevalence of SW errors, comprising more than half of the SW development cost.
 Our focus in this course is to study program analysis methods, which are fundamental and modern technologies that can effectively help the SW validation process.
 
+## Setting Up the Programming Environment
+* *Note1*: This guidance assumes you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+* *Note2*: I checked that the following instructions successfully work for the docker image ``python:3.9.19-slim``.
+* Installing [OCaml](https://ocaml.org/install)
+```
+$ chmod +x setup/ocaml.sh; ./setup/ocaml.sh
+```
+* Installing [Z3](https://github.com/Z3Prover/z3)
+```
+$ chmod +x setup/z3.sh; ./setup/z3.sh
+```
+
 ## Schedule
 |#|Topics|Date|
 |-|------|-------|
