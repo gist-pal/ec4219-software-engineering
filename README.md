@@ -10,7 +10,7 @@ Our focus in this course is to study program analysis methods, which are fundame
 
 ## Setting Up the Programming Environment
 **Note1**: This instruction assumes that you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install). <br>
-**Note2**: I checked that the following commands successfully work for the docker image ``python:3.9.19-slim``.
+**Note2**: I checked that the following commands successfully work for the clean docker image ``python:3.9.19-slim``.
 
 ### Installing [OCaml](https://ocaml.org/install)
 ```
