@@ -19,14 +19,15 @@ $ chmod +x setup/ocaml.sh; ./setup/ocaml.sh
 
 ### Installing [Z3](https://github.com/Z3Prover/z3)
 ```
-$ chmod +x setup/z3.sh; ./setup/z3.sh
+$ eval $(opam env); chmod +x setup/z3.sh; ./setup/z3.sh
 ```
 
 ### Testing
 If your installations were successful, you must get appropriate results by executing the following commands.
 ```
-$ chmod +x setup/test_ocaml.sh; ./setup/test_ocaml.sh
-$ python3 setup/ex.py
+$ cd setup
+$ eval $(opam env); chmod +x test_ocaml.sh; ./test_ocaml.sh
+$ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 ```
 
 ## Schedule
