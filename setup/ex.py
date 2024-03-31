@@ -3,6 +3,6 @@ from z3 import *
 x = Bool('x')
 y = Bool('y')
 
-f = Implies (x, y)
+f = And (x, y)
 
 solve (f)
