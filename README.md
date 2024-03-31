@@ -9,15 +9,24 @@ In particular, SW validation is highly important in the SW process due to the pr
 Our focus in this course is to study program analysis methods, which are fundamental and modern technologies that can effectively help the SW validation process.
 
 ## Setting Up the Programming Environment
-* *Note1*: This guidance assumes you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-* *Note2*: I checked that the following instructions successfully work for the docker image ``python:3.9.19-slim``.
-* Installing [OCaml](https://ocaml.org/install)
+*Note1*: This guidance assumes you are using the Linux command line interface. For Windows users, I recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)<br>
+*Note2*: I checked that the following instructions successfully work for the docker image ``python:3.9.19-slim``.
+
+### Installing [OCaml](https://ocaml.org/install)
 ```
 $ chmod +x setup/ocaml.sh; ./setup/ocaml.sh
 ```
-* Installing [Z3](https://github.com/Z3Prover/z3)
+
+### Installing [Z3](https://github.com/Z3Prover/z3)
 ```
 $ chmod +x setup/z3.sh; ./setup/z3.sh
+```
+
+### Testing
+If your installations were successful, the following commands should output appropriate results.
+```
+$ chmod +x setup/test_ocaml.sh; ./setup/test_ocaml.sh
+$ python3 setup/ex.py
 ```
 
 ## Schedule
