@@ -43,6 +43,7 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |7|[First-Order Logic (1)](slides/lec5.pdf) |3/20|
 |8|First-Order Logic (2) (cont'd) |3/25|
 |9|[First-Order Theories](slides/lec6.pdf) |3/27|
+|10|[Problem Solving using SMT Solvers](slides/lec7.pdf) |4/1|
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
