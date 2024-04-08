@@ -1,6 +1,5 @@
 open Z3
 open Z3.Solver
-open Formula
 
 let ctx = Z3.mk_context [("timeout", "30000")]
 
