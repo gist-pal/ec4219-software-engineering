@@ -31,19 +31,18 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 ```
 
 ## Schedule
-|#|Topics|Date|
-|-|------|-------|
-|0|[Course Overview](slides/lec0.pdf)|2/26|
-|1|[Introduction to Program Analysis](slides/lec1.pdf)|2/28|
-|2|Review |3/4|
-|3|[Fuzzing](slides/lec2.pdf) |3/6|
-|4|[Propositional Logic (1)](slides/lec3.pdf) |3/11|
-|5|[Propositional Logic (2)](slides/lec4.pdf) |3/13|
-|6|Propositional Logic (3) (cont'd) |3/18|
-|7|[First-Order Logic (1)](slides/lec5.pdf) |3/20|
-|8|First-Order Logic (2) (cont'd) |3/25|
-|9|[First-Order Theories](slides/lec6.pdf) |3/27|
-|10|[Problem Solving using SMT Solvers](slides/lec7.pdf) |4/1|
+|#|Date|Topics|Recommended Reading|
+|-|-|------|------|
+|0|2/26|[Course Overview](slides/lec0.pdf)||
+|1|2/28,3/4|[Introduction to Program Analysis](slides/lec1.pdf)||
+|2|3/6|[Fuzzing](slides/lec2.pdf)||
+|3|3/11|[Propositional Logic (1)](slides/lec3.pdf)|The Calculus of Computation Ch. 1|
+|4|3/13, 3/18|[Propositional Logic (2)](slides/lec4.pdf) |The Calculus of Computation Ch. 1|
+|5|3/20, 3/25|[First-Order Logic](slides/lec5.pdf)|The Calculus of Computation Ch. 2|
+|6|3/27|[First-Order Theories](slides/lec6.pdf)|The Calculus of Computation Ch. 3|
+|7|4/1|[Problem Solving using SMT Solvers](slides/lec7.pdf)| |
+|8|4/3|[Functional Programming in OCaml](slides/lec8.pdf)||
+|9|4/8|[Problem Solving using SMT Solvers (2)](slides/lec9.pdf)||
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
