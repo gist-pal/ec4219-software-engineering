@@ -43,6 +43,8 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |7|4/1|[Problem Solving using SMT Solvers](slides/lec7.pdf)| |
 |8|4/3|[Functional Programming in OCaml](slides/lec8.pdf)||
 |9|4/8|[Problem Solving using SMT Solvers (2)](slides/lec9.pdf)||
+|-|4/15|[Mid-term Exam]||
+|-|4/22|[Reviewing Mid-term Exam]||
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
