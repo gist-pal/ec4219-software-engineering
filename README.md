@@ -45,6 +45,7 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |9|4/8|[Problem Solving using SMT Solvers (2)](slides/lec9.pdf)||
 |-|4/15|[Mid-term Exam]||
 |-|4/22|[Reviewing Mid-term Exam]||
+|10|4/24|[Program Verification (1)](slides/lec10.pdf)||
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
