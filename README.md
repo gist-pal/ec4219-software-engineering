@@ -53,4 +53,4 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
 * [CIS547:Software Analysis](https://software-analysis-class.org) course taught by Prof. Mayur Naik at UPenn
 * [AAA615:Formal Methods](https://prl.korea.ac.kr/courses/aaa615/2017) course taught by Prof. Hakjoo Oh at Korea University
-* [CS398L:Automated Logical Reasonin](https://www.cs.utexas.edu/~isil/cs389L/) course taught by Prof. Isil Dillig at UT Austin
+* [CS398L:Automated Logical Reasoning](https://www.cs.utexas.edu/~isil/cs389L/) course taught by Prof. Isil Dillig at UT Austin
