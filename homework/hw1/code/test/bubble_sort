@@ -1,0 +1,36 @@
+@pre { true }
+@post { sorted (rv, 0, len(rv) - 1) }
+
+bubble_sort (int [] a0) returns (int[] rv) {
+  int[] a;
+  a = a0;
+
+  int i;
+  i = len(a) - 1;
+
+  while
+    @L { -1 <= i && i < len(a) && partitioned (a,0,i,i+1,len(a)-1) }
+    (i>0)
+  {
+    int j;
+    j = 0;
+    while
+	  @L {1<= i && i < len(a) && 0 <= j && j <= i
+	      && partitioned (a,0,i,i+1,len(a) - 1)
+		  && partitioned (a,0,j-1,j,j)
+		  && sorted (a,i,len(a)-1)}
+	  (j < i)
+	{
+      if (a[j] > a[j+1]) {
+        int t;
+		t = a[j];
+		a[j] = a[j+1];
+		a[j+1] = t;
+      }
+	  j = j+1;
+	}
+    i = i-1;
+  }
+
+  return a;
+}
