@@ -1,3 +1,4 @@
 *.native
+*.swp
 homework/hw*/code*/_build
 homework/hw*/code*/main.native
