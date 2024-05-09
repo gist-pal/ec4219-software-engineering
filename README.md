@@ -47,7 +47,7 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |-|4/22|[Reviewing Mid-term Exam]||
 |10|4/24|[Program Verification (1)](slides/lec10.pdf)|The Calculus of Computation Ch. 5|
 |11|4/29|[Program Verification (2)](slides/lec11.pdf)|The Calculus of Computation Ch. 5|
-|11|5/8|[Program Verification (3)](slides/lec12.pdf)||
+|12|5/8|[Program Verification (3)](slides/lec12.pdf)||
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
