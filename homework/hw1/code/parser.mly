@@ -65,10 +65,10 @@ typ:
 formula:
   | TRUE {F.True}
   | FALSE {F.False}
-  | SORTED LPAREN ID COMMA term COMMA term RPAREN
-    { Sorted (($3, NullSort), $5, $7) }
-  | PARTITIONED LPAREN ID COMMA term COMMA term COMMA term COMMA term RPAREN
-    { Partitioned (($3, NullSort),$5,$7,$9,$11) }
+  | SORTED LPAREN term COMMA term COMMA term RPAREN
+    { Sorted ($3, $5, $7) }
+  | PARTITIONED LPAREN term COMMA term COMMA term COMMA term COMMA term RPAREN
+    { Partitioned ($3,$5,$7,$9,$11) }
   | ID { PVar $1 }
   | LPAREN formula RPAREN { $2 }
   | term EQ term {F.BinRel (F.Eq,$1,$3)}
@@ -97,7 +97,7 @@ term:
   | NUM {Int $1}
   | LEN LPAREN ID RPAREN {Len ($3, NullSort)}
   | ID {Var ($1, NullSort)}
-  | ID LBRACKET term RBRACKET {F.Read (($1, ESort Int),$3)}
+  | ID LBRACKET term RBRACKET {F.Read (F.Var ($1, ESort Int),$3)}
   | term PLUS term {F.BinOp (Add,$1,$3, ESort Int)}
   | term MINUS term {F.BinOp (Sub,$1,$3, ESort Int)}
   | term MUL term {F.BinOp (Mul,$1,$3, ESort Int)}

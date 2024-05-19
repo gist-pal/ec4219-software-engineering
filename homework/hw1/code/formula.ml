@@ -3,8 +3,8 @@ open Vocab
 type formula =
   | True | False
   | PVar of vid
-  | Sorted of var * term * term
-  | Partitioned of var * term * term * term * term
+  | Sorted of term * term * term
+  | Partitioned of term * term * term * term * term
   | Not of formula
   | And of formula * formula
   | Or of formula * formula
@@ -18,7 +18,7 @@ and term =
   | Int of int
   | Var of var
   | Len of var (* len of array *)
-  | Read of var * term (* A[i] *)
+  | Read of term * term (* A[i] *)
   | Write of term * term * term (* A[i] := v, return the modified A *)
   | BinOp of bop * term * term * sort
 
@@ -46,10 +46,10 @@ let rec to_string_formula : formula -> string
   | And (f1,f2) -> "(" ^ to_string_formula f1 ^ " /\\ " ^ to_string_formula f2 ^ ")"
   | Or (f1,f2) -> "(" ^ to_string_formula f1 ^ " \\/ " ^ to_string_formula f2
   | PVar p -> p
-  | Sorted (a,l,u) -> "sorted (" ^ fst a ^ "," ^ to_string_term l ^ "," ^ to_string_term u ^ ")"
+  | Sorted (a,l,u) -> "sorted (" ^ to_string_term a ^ "," ^ to_string_term l ^ "," ^ to_string_term u ^ ")"
   | Partitioned (a,l1,u1,l2,u2) ->
     "partitioned (" ^
-      fst a ^ "," ^ to_string_term l1 ^ "," ^ to_string_term u1 ^ "," ^
+      to_string_term a ^ "," ^ to_string_term l1 ^ "," ^ to_string_term u1 ^ "," ^
       to_string_term l2 ^ "," ^ to_string_term u2 ^ ")"
   | BinRel (brel,t1,t2) ->
     (match brel with
@@ -74,8 +74,8 @@ and to_string_term : term -> string
   | Int n -> string_of_int n
   | Var x -> fst x
   | Len x -> "len" ^ "(" ^ fst x ^ ")"
-  | Read (x,t) -> fst x ^ "[" ^ to_string_term t ^ "]"
-  | Write (t1,t2,t3) -> "write(" ^ to_string_term t1 ^ "," ^ to_string_term t2 ^ ")"
+  | Read (t1,t2) -> to_string_term t1 ^ "[" ^ to_string_term t2 ^ "]"
+  | Write (t1,t2,t3) -> "write(" ^ to_string_term t1 ^ "," ^ to_string_term t2 ^ "," ^ to_string_term t3 ^ ")"
   | BinOp (bop,t1,t2,_) ->
     (match bop with
      | Add -> "(" ^ to_string_term t1 ^ " + " ^ to_string_term t2 ^ ")"

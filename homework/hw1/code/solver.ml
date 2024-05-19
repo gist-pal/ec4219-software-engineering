@@ -25,8 +25,8 @@ let rec trans_f : formula -> Z3.Expr.expr
   | False -> Z3.Boolean.mk_false ctx
   | PVar x -> Z3.Boolean.mk_const_s ctx x
   | Sorted (a,l,u) ->
-    let i = ("i", ESort Int) in
-    let j = ("j", ESort Int) in
+    let i = ("@i", ESort Int) in
+    let j = ("@j", ESort Int) in
     let pre1 = BinRel (Leq, l, Var i) in
     let pre2 = BinRel (Leq, Var i, Var j) in
     let pre3 = BinRel (Leq, Var j, u) in
@@ -34,8 +34,8 @@ let rec trans_f : formula -> Z3.Expr.expr
     let final = Forall ([i;j], Imply (And (pre1, And (pre2,pre3)), con)) in
     trans_f final
   | Partitioned (a,l1,u1,l2,u2) ->
-    let i = ("i", ESort Int) in
-    let j = ("j", ESort Int) in
+    let i = ("@i", ESort Int) in
+    let j = ("@j", ESort Int) in
     let pre1 = BinRel (Leq, l1, Var i) in
     let pre2 = BinRel (Leq, Var i, u1) in
     let pre3 = BinRel (Lt, u1, l2) in
@@ -74,10 +74,12 @@ and trans_t : term -> Z3.Expr.expr
   match t with
   | Int n -> Z3.Arithmetic.Integer.mk_numeral_i ctx n
   | Var (x,sort) -> Z3.Expr.mk_const_s ctx x (to_z3sort sort)
-  | Len v -> trans_t (Read (("len", snd v), Var v))
-  | Read (v,t) ->
-    let z3exp1 = trans_t (Var v) in
-    let z3exp2 = trans_t t in
+  | Len v ->
+    let len = ("len", Array (ESort Int, ESort Int)) in
+    trans_t (Read (Var len, Var (fst v, ESort Int)))
+  | Read (t1,t2) ->
+    let z3exp1 = trans_t t1 in
+    let z3exp2 = trans_t t2 in
     Z3.Z3Array.mk_select ctx z3exp1 z3exp2
   | Write (t1,t2,t3) ->
     let z3exp1 = trans_t t1 in

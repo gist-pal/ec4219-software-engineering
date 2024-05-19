@@ -68,9 +68,9 @@ let rec add_f : TypMap.t -> formula -> formula
 = fun m f ->
   match f with
   | F.True | F.False | F.PVar _ -> f
-  | F.Sorted (v,t1,t2) -> F.Sorted (add_v2 m v, add_t m t1, add_t m t2)
-  | F.Partitioned (v,t1,t2,t3,t4) ->
-    F.Partitioned (add_v2 m v, add_t m t1, add_t m t2, add_t m t3, add_t m t4)
+  | F.Sorted (t1,t2,t3) -> F.Sorted (add_t m t1, add_t m t2, add_t m t3)
+  | F.Partitioned (t1,t2,t3,t4,t5) ->
+    F.Partitioned (add_t m t1, add_t m t2, add_t m t3, add_t m t4, add_t m t5)
   | F.Not f -> F.Not (add_f m f)
   | F.And (f1,f2) -> F.And (add_f m f1, add_f m f2)
   | F.Or (f1,f2) -> F.Or (add_f m f1, add_f m f2)
@@ -90,7 +90,7 @@ and add_t : TypMap.t -> term -> term
   | F.Int _ -> term
   | F.Var v -> F.Var (add_v2 tmap v)
   | F.Len v -> F.Len (add_v2 tmap v)
-  | F.Read (v,t) -> F.Read (add_v2 tmap v, add_t tmap t)
+  | F.Read (t1,t2) -> F.Read (add_t tmap t1, add_t tmap t2)
   | F.Write (t1,t2,t3) -> F.Write (add_t tmap t1, add_t tmap t2, add_t tmap t3)
   | F.BinOp (bop,t1,t2,typ) -> F.BinOp (bop, add_t tmap t1, add_t tmap t2, typ)
 
