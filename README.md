@@ -50,9 +50,10 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |12|5/8|[Program Verification (3)](slides/lec12.pdf)||
 |13|5/13|[Program Verification (4)](slides/lec13.pdf)|[Houdini Paper](https://users.soe.ucsc.edu/~cormac/papers/fme01.pdf)|
 |14|5/14|[Symbolic Execution](slides/lec14.pdf)|[A Survey of Symbolic Execution Techniques](https://dl.acm.org/doi/10.1145/3182657)|
-|15|5/16|Review + Detailed Guidance about hw1||
-|16|5/27|[Symbolic Execution (2)](slides/lec15.pdf)||
+|-|5/16|Review + Detailed Guidance about hw1||
+|15|5/27|[Symbolic Execution (2)](slides/lec15.pdf)||
 |16|5/29|[Abstract Interpretation (1)](slides/lec16.pdf)|Semantics with Applications Ch. 7|
+|17|5/31|[Abstract Interpretation (2)](slides/lec17.pdf)||
 
 ## References
 I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
