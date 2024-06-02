@@ -1,0 +1,33 @@
+@pre { true }
+@post { sorted (rv, 0, len(rv) - 1) }
+
+bubble_sort (int [] a0) returns (int[] rv) {
+  int[] a;
+  a = a0;
+
+  int i;
+  i = len(a) - 1;
+
+  while
+    @L { ? }
+    (i>0)
+  {
+    int j;
+    j = 0;
+    while
+	  @L { ? }
+	  (j < i)
+	{
+      if (a[j] > a[j+1]) {
+        int t;
+		t = a[j];
+		a[j] = a[j+1];
+		a[j+1] = t;
+      }
+	  j = j+1;
+	}
+    i = i-1;
+  }
+
+  return a;
+}

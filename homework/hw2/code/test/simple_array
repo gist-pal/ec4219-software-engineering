@@ -1,0 +1,21 @@
+@pre {true}
+@post {true}
+
+simple_array (int n) returns (int rv) {
+  int[3] a;
+
+  assert(a[0] == 0);
+  assert(len(a) == 3);
+
+  a[0] = 3;
+  assert(a[0] == 3);
+
+  int i;
+  i = 2;
+  a[i] = 10;
+
+  assert(a[i-2] == 3);
+  assert(a[i] == 10);
+
+  return rv;
+}

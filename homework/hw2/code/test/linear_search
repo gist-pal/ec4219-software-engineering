@@ -1,0 +1,21 @@
+@pre { 0 <= l && u < len(a) }
+@post {rv <-> exists i. l<= i && i<=u && a[i] = e }
+
+linear_search (int[] a, int l, int u, int e) returns (bool rv) {
+  int i;
+  i = l;
+
+  while
+    @L{ ? }
+    (i<=u)
+  {
+    assert(i < len(a)); (* safe *)
+    assert(u < len(a)); (* safe *)
+    assert(l <= u ); (* safe *)
+    assert(l >= u); (* unsafe *)
+    if (a[i] == e) { return true; }
+    i = i+1;
+  }
+
+  return false;
+}

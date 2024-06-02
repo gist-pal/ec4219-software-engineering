@@ -1,0 +1,18 @@
+@pre { n >= 0}
+@post {rv = n}
+
+(* from p.12 of lec10 *)
+loop1 (int n) returns (int rv) {
+  int i;
+  int j;
+  
+  i = 0;
+  j = 0;
+
+  while @L{?} (i!=n) {
+    i = i+1;
+    j = j+1;
+  }
+
+  return j;
+}
