@@ -22,6 +22,7 @@ type bexp =
 
 type cmd =
   | Assign of var * aexp
+  | Skip
   | Seq of cmd * cmd
   | If of bexp * cmd * cmd
   | While of bexp * cmd
