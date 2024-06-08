@@ -53,10 +53,12 @@ $ export PYTHONPATH=$home/mylib:$PYTHONPATH; python3 ex.py
 |-|5/16|Review + Detailed Guidance about hw1||
 |15|5/27|[Symbolic Execution (2)](slides/lec15.pdf)||
 |16|5/29|[Abstract Interpretation (1)](slides/lec16.pdf)|Semantics with Applications Ch. 7|
-|17|5/31|[Abstract Interpretation (2)](slides/lec17.pdf)||
+|17|5/31,6/3|[Abstract Interpretation (2)](slides/lec17.pdf)||
+|18|6/5|[Abstract Interpretation (3)](slides/lec18.pdf)||
 
-## References
-I am truly grateful to the authors of the materials from the following courses, which greatly helped to improve the quality of this course.
-* [CIS547:Software Analysis](https://software-analysis-class.org) course taught by Prof. Mayur Naik at UPenn
+## References & Acknowledgements
+My lecture slides are based on the materials from the following courses.
+I am truly grateful to their authors, as these materials greatly helped improve the quality of this course.
 * [AAA615:Formal Methods](https://prl.korea.ac.kr/courses/aaa615/2017) course taught by Prof. Hakjoo Oh at Korea University
 * [CS398L:Automated Logical Reasoning](https://www.cs.utexas.edu/~isil/cs389L/) course taught by Prof. Isil Dillig at UT Austin
+* [CIS547:Software Analysis](https://software-analysis-class.org) course taught by Prof. Mayur Naik at UPenn

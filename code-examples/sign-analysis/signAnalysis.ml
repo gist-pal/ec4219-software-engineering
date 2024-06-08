@@ -234,6 +234,7 @@ let rec eval_c : cmd -> AbsMem.t -> AbsMem.t
 = fun c m ->
    match c with
    | Assign (x,a) -> AbsMem.add x (eval_a a m) m
+   | Skip -> m
    | Seq (c1,c2) -> eval_c c2 (eval_c c1 m)
    | If (b, c1, c2) -> cond (eval_b b, eval_c c1, eval_c c2) m
    | While (b, c) ->
