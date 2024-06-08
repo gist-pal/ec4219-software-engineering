@@ -1,0 +1,37 @@
+@pre {true}
+@post {rv <-> true}
+
+array (int n) returns (bool rv) {
+  int i;
+  int j;
+  int[10] a;
+  int[10] b;
+
+  i = 0;
+  while @L{?} (i < 10) {
+    a[i] = i;
+    assert (a[i]>=0 && a[i] < 10); (* safe *)
+    assert (b[i] == 0); (* safe *)
+    i = i+1;
+  }
+
+  i = 0;
+  j = 0;
+
+  while @L{?} (i<10) {
+    assert(i < len(a)); (* safe *)
+    assert(j < len(a)); (* safe but cannot be proven using our analysis *)
+    b[i] = a[i];
+    i=i+1;
+    j=j+1;
+  }
+
+  assert(i < len(a)); (* unsafe *)
+  assert(i - 1 < len(a)); (* safe *)
+  assert(a[i]>=0 && a[i] < 10); (* safe *)
+  assert(b[i]>=0 && b[i] < 10); (* safe *)
+  assert(a[i]>=0 && a[i] < 9); (* unsafe *)
+  assert(b[i]>=0 && b[i] < 9); (* unsafe *)
+
+  return true;
+}
