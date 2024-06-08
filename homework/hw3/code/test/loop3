@@ -14,8 +14,9 @@ simple_loop3 (int n) returns (bool rv) {
 	(* y = y+1; *)
   }
 
-  assert (x==10 && y>=0);
-  assert (y>=10);
+  assert (x==10 && y>=0); (* must be proven *)
+  assert (y>=10); (* cannot be proven using our interval analysis *)
+
 
   return true;
 }
