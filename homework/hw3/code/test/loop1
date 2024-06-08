@@ -1,0 +1,22 @@
+@pre { n >= 0}
+@post {rv = n}
+
+(* from p.12 of lec10 *)
+loop1 (int n) returns (int rv) {
+  int i;
+  int j;
+  
+  i = 0;
+  j = 0;
+
+  while @L{?} (i!=n) {
+    i = i+1;
+    j = j+1;
+	assert(i>=1);
+	assert(j>=1);
+  }
+  assert (i==n); (* cannot be proven using our interval analysis *)
+  assert (i==j); (* cannot be proven using our interval analysis *)
+ 
+  return j;
+}

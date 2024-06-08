@@ -1,0 +1,21 @@
+@pre {true}
+@post {rv <-> true}
+
+(* from lec17 *)
+simple_loop3 (int n) returns (bool rv) {
+  int x;
+  int y;
+  
+  x = 0;
+  y = 0;
+
+  while @L{?} (x<10) {
+    x = x+1;
+	(* y = y+1; *)
+  }
+
+  assert (x==10 && y>=0);
+  assert (y>=10);
+
+  return true;
+}

@@ -1,0 +1,21 @@
+@pre {true}
+@post {rv <-> true}
+
+(* from p.10 of lec12 *)
+simple_loop1 (int n) returns (bool rv) {
+  int i;
+  int j;
+  
+  i = 1;
+  j = 1;
+
+  while @L{?} (i<n) {
+    j = j+i;
+    i = i+1;
+	assert(j>=i);
+	assert(j>=1);
+	assert(i==j);
+  }
+
+  return true;
+}
