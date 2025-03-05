@@ -1,6 +1,6 @@
 # EC4219: Software Engineering (소프트웨어공학)
 - Instructor: [Sunbeom So](https://gist-pal.github.io)
-- Location: EECS B203
+- Location: EECS B201
 - Time: Mon/Wed 16:00-17:30
 
 ## About The Course
