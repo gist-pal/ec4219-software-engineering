@@ -45,6 +45,8 @@ The OCaml toplevel, version 5.1.1
 |#|Date|Topics|Recommended Reading|
 |-|-|------|------|
 |0|3/5|[Course Overview](slides/lec0.pdf)||
+|0|3/10|[Propositional Logic (1)](slides/lec1.pdf)||
+
 
 ## References & Acknowledgements
 My lecture slides are based on those from the following courses.
