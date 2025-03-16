@@ -9,4 +9,4 @@ type exp =
   | Div of exp * exp
 
 let rec eval : exp -> int
-= fun exp -> (* TODO *)
+= fun exp -> (* TODO *) failwith "NotImplemented"
