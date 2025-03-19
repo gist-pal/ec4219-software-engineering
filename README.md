@@ -51,7 +51,7 @@ The OCaml toplevel, version 5.1.1
 |-|-|------|------|
 |0|3/5|[Course Overview](slides/lec0.pdf)||
 |1|3/10|[Propositional Logic (1)](slides/lec1.pdf)| COC Ch.1.1-1.5|
-|2|3/17|[Propositional Logic (1)](slides/lec2.pdf)| COC Ch.1.6-1.7|
+|2|3/17,19|[Propositional Logic (1)](slides/lec2.pdf)| COC Ch.1.6-1.7|
 
 
 ## References & Acknowledgements
