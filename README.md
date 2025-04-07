@@ -53,7 +53,8 @@ The OCaml toplevel, version 5.1.1
 |1|3/10|[Propositional Logic (1)](slides/lec1.pdf)| COC Ch.1.1-1.5|
 |2|3/17, 3/19|[Propositional Logic (1)](slides/lec2.pdf)| COC Ch.1.6-1.7|
 |3|3/24, 3/27, 3/31|[First-Order Logic](slides/lec3.pdf)| COC Ch.2|
-|4|4/2|[First-Order Theories](slides/lec4.pdf)| COC Ch.3|
+|4|4/2, 4/7|[First-Order Theories](slides/lec4.pdf)| COC Ch.3|
+|-|4/7|[Undecidability, Halting Problem](slides/lec-halting.pdf)| |
 
 
 ## References & Acknowledgements
