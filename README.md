@@ -55,6 +55,7 @@ The OCaml toplevel, version 5.1.1
 |3|3/24, 3/27, 3/31|[First-Order Logic](slides/lec3.pdf)| COC Ch.2|
 |4|4/2, 4/7|[First-Order Theories](slides/lec4.pdf)| COC Ch.3|
 |-|4/7|[Undecidability, Halting Problem](slides/lec-halting.pdf)| |
+|5|4/9|[Problem Solving using SMT Solvers](slides/lec5.pdf)| |
 
 
 ## References & Acknowledgements
