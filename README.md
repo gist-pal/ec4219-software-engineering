@@ -56,6 +56,9 @@ The OCaml toplevel, version 5.1.1
 |4|4/2, 4/7|[First-Order Theories](slides/lec4.pdf)| COC Ch.3|
 |-|4/7|[Undecidability, Halting Problem](slides/lec-halting.pdf)| |
 |5|4/9|[Problem Solving using SMT Solvers](slides/lec5.pdf)| |
+|-|4/14|[Reviewing Past Exam Questions]| |
+|-|4/21|[Mid-term Exam]| |
+|-|4/28|[Functional Programming in OCaml](slides/lec-ocaml.pdf)||
 
 
 ## References & Acknowledgements
