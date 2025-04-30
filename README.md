@@ -59,6 +59,7 @@ The OCaml toplevel, version 5.1.1
 |-|4/14|[Reviewing Past Exam Questions]| |
 |-|4/21|[Mid-term Exam]| |
 |-|4/28|[Functional Programming in OCaml](slides/lec-ocaml.pdf)||
+|6|4/30|[Program Verification (1): Specification](slides/lec6.pdf)||
 
 
 ## References & Acknowledgements
