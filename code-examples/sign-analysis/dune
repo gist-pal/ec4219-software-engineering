@@ -1,0 +1,3 @@
+(library
+ (public_name Examples.signAnalysis)
+ (name signAnalysis))

@@ -1,0 +1,18 @@
+(library
+ (name lib)
+ (modules :standard \ main)
+ (wrapped false)
+ (libraries batteries z3))
+ 
+(executable
+ (name main)
+ (modules main)
+ (public_name main)
+ (libraries lib)
+ (promote
+  (until-clean)
+  (into ..)))
+ 
+(ocamllex lexer)
+
+(ocamlyacc parser)
