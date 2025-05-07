@@ -60,6 +60,7 @@ The OCaml toplevel, version 5.1.1
 |-|4/21|[Mid-term Exam]| |
 |-|4/28|[Functional Programming in OCaml](slides/lec-ocaml.pdf)||
 |6|4/30, 5/7|[Program Verification (1): Specification](slides/lec6.pdf)||
+|7|5/7|[Program Verification (2): Inductive Assertion Method](slides/lec7.pdf)||
 
 
 ## References & Acknowledgements
