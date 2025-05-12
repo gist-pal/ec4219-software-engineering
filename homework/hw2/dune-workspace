@@ -1,0 +1,7 @@
+(lang dune 3.17)
+
+(env 
+  (dev 
+    (flags :standard -warn-error -27-32-33-39)))
+    
+; to fully ignore warnings: flags :standard -w -27

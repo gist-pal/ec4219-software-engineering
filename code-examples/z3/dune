@@ -1,0 +1,4 @@
+(library
+ (public_name Examples.z3_example)
+ (name z3_example)
+ (libraries z3))

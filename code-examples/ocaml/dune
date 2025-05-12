@@ -1,0 +1,3 @@
+(library
+ (public_name Examples.ocaml_example)
+ (name ocaml_example))
