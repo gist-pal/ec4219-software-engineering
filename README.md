@@ -64,6 +64,17 @@ The OCaml toplevel, version 5.1.1
 |8|5/19|[Program Verification (3): Inductive Assertion Method (Cont'd)](slides/lec8.pdf)||
 
 
+## Academic Integrity
+By registering for this course, I will assume you agree with the policy below.
+* All assignments (i.e., writing code) must be your own work. No discussions are allowed.
+  * You should not share/show your code.
+  * You should not post your code on public websites.
+  * You should not modify other students’ code.
+* I will have a one-on-one meeting with each student under suspicion.
+If you fail to prove your integrity in the meeting (e.g., failing to answer my questions about the details of your submissions), I will consider that you committed academic misconduct, even if you do not admit to your cheating.
+* Cheating on assignments will result in an F.
+
+
 ## References & Acknowledgements
 My lecture slides are based on those from the following courses.
 I sincerely appreciate their authors for providing materials that have greatly enhanced the quality of this course.
