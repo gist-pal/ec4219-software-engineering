@@ -33,12 +33,18 @@ After setting up WSL, simply copy and run the following commands in the terminal
 $ chmod +x setup/install_ocaml_ubuntu.sh; ./setup/install_ocaml_ubuntu.sh; eval $(opam env)
 ```
 
+### Installing Z3
+To install Z3, simply copy and run the following commands in the terminal.
+```
+$ chmod +x setup/install_z3.sh; ./setup/install_z3.sh
+```
+
 ### Installation Verification
-For any OS, if the installation was successful, you should see the message ``The OCaml toplevel, version 5.1.1``
-by running the command ``ocaml --version`` in the terminal.
 ```
 $ ocaml --version
 The OCaml toplevel, version 5.1.1
+$ z3 --version
+Z3 version 4.13.0 - 64 bit
 ```
 
 
