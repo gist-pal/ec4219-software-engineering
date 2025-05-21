@@ -1,0 +1,17 @@
+--- Thread_A ---
+(0, maygoto 1)
+(1, a=true and goto 2)
+(2, p=false and goto 3)
+(3, if b then goto 4 else goto 5)
+(4, if p then goto 5 else goto 3)
+(5, critical and goto 6)
+(6, a=false and goto 0)
+
+--- Thread_B ---
+(0, maygoto 1)
+(1, b=true and goto 2)
+(2, p=true and goto 3)
+(3, if a then goto 4 else goto 5)
+(4, if p then goto 3 else goto 5)
+(5, critical and goto 6)
+(6, b=false and goto 0)
