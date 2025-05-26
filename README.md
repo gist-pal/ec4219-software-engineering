@@ -69,6 +69,7 @@ Z3 version 4.13.0 - 64 bit
 |7|5/7, 5/12, 5/14|[Program Verification (2): Inductive Assertion Method](slides/lec7.pdf)|COC Ch.5.2|
 |8|5/19|[Program Verification (3): Inductive Assertion Method](slides/lec8.pdf)||
 |9|5/21|[Program Verification (4): Invariant Inference](slides/lec9.pdf)|[Houdini Paper](https://users.soe.ucsc.edu/~cormac/papers/fme01.pdf)|
+|10|5/26|[Symbolic Execution (1)](slides/lec10.pdf)|[A Survey of Symbolic Execution Techniques](https://dl.acm.org/doi/10.1145/3182657)|
 
 
 ## Academic Integrity
