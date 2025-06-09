@@ -71,7 +71,8 @@ Z3 version 4.13.0 - 64 bit
 |9|5/21|[Program Verification (4): Invariant Inference](slides/lec9.pdf)|[Houdini Paper](https://users.soe.ucsc.edu/~cormac/papers/fme01.pdf)|
 |10|5/26, 5/28|[Symbolic Execution](slides/lec10.pdf)|[A Survey of Symbolic Execution Techniques](https://dl.acm.org/doi/10.1145/3182657)|
 |11|6/2|[Program Verification (5): Termination Proof](slides/lec11.pdf)|COC Ch.5.3|
-|12|6/4|[Type System (1): Introduction](slides/lec12.pdf)||
+|12|6/4|[Type System: Introduction](slides/lec12.pdf)||
+|13|6/9|[Automatic Type Inference (1): Deriving Type Equations](slides/lec13.pdf)||
 
 
 ## Academic Integrity
