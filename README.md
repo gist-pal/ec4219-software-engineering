@@ -73,6 +73,7 @@ Z3 version 4.13.0 - 64 bit
 |11|6/2|[Program Verification (5): Termination Proof](slides/lec11.pdf)|COC Ch.5.3|
 |12|6/4|[Type System: Introduction](slides/lec12.pdf)||
 |13|6/9|[Automatic Type Inference (1): Deriving Type Equations](slides/lec13.pdf)||
+|14|6/11|[Automatic Type Inference (2): Solving Type Equations](slides/lec14.pdf)||
 
 
 ## Academic Integrity
