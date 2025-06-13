@@ -74,6 +74,8 @@ Z3 version 4.13.0 - 64 bit
 |12|6/4|[Type System: Introduction](slides/lec12.pdf)||
 |13|6/9|[Automatic Type Inference (1): Deriving Type Equations](slides/lec13.pdf)||
 |14|6/11|[Automatic Type Inference (2): Solving Type Equations](slides/lec14.pdf)||
+|15|6/13|[Let-Polymorphic Type System](slides/lec15.pdf)||
+|16|6/13|[Wrap-Up](slides/lec16.pdf)|[Automatic Safety Analysis of Smart Contracts](slides/STAAR_241115.pdf)|
 
 
 ## Academic Integrity
