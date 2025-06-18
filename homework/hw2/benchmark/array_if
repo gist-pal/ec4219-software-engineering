@@ -1,0 +1,20 @@
+@pre {true}
+@post {true}
+
+array_if (int i) returns (int rv) {
+  int[10] a;
+
+  if (i > 9) {
+    assert(i >= 0 && i < len(a)); (* false *)
+  }
+  else {
+    if ( i < 0 ) {
+      assert(i >= 0 && i < len(a)); (* false *)
+    }
+	else { (* i>=0 && i <= 9 *)
+      assert(i >= 0 && i < len(a)); (* true *)
+	}
+  }
+
+  return rv;
+}
