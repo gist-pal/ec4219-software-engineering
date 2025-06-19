@@ -76,7 +76,7 @@ Z3 version 4.13.0 - 64 bit
 |14|6/11|[Automatic Type Inference (2): Solving Type Equations](slides/lec14.pdf)||
 |15|6/13|[Let-Polymorphic Type System](slides/lec15.pdf)||
 |16|6/13|[Wrap-Up](slides/lec16.pdf)|[Automatic Safety Analysis of Smart Contracts](slides/STAAR_241115.pdf)|
-
+|-|6/16|[Final Exam]| |
 
 ## Academic Integrity
 By registering for this course, I will assume you agree with the policy below.
@@ -93,6 +93,6 @@ If you fail to prove your integrity in the meeting (e.g., failing to answer my q
 My lecture slides are based on those from the following courses.
 I sincerely appreciate their authors for providing materials that have greatly enhanced the quality of this course.
 
-* [AAA615:Formal Methods](https://prl.korea.ac.kr/courses/aaa615/2017) course taught by Prof. Hakjoo Oh at Korea University
+* [AAA615:Formal Methods](https://prl.korea.ac.kr/courses/aaa615/2017) and [COSE212:Programming Languages](https://prl.korea.ac.kr/courses/cose212/2024/) courses taught by Prof. Hakjoo Oh at Korea University
 * [CS398L:Automated Logical Reasoning](https://www.cs.utexas.edu/~isil/cs389L/) course taught by Prof. Isil Dillig at UT Austin
 * [CIS547:Software Analysis](https://software-analysis-class.org) course taught by Prof. Mayur Naik at UPenn
