@@ -5,6 +5,8 @@ open Solver
 
 exception NotImplemented
 
+(* VC to verify the safety of the condition
+   in each line's assert statement *)
 type assert_vc = line * T.formula
 
 let gen_vc : pgm -> T.formula * assert_vc list

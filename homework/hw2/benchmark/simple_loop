@@ -1,0 +1,33 @@
+@pre {n >= 1}
+@post {rv = n}
+
+(* correct output: true, 5 *)
+
+simple_loop (int n) returns (int rv) {
+  int i;
+  int j;
+
+  i = 1;
+  j = 1;
+
+  bool b1;
+  bool b2;
+  b1 = false;
+  b1 = b1 && false || true && b1;
+  b1 = j>=1;
+  b2 = i>=1;
+
+  assert (b1 && b2); (* safe *)
+
+  while @L{ (b1 <-> j>=1) && b1 && (b2 <-> i>=1) && b2 && i >= 1 && i <= n } (i < n) {
+    j = j+i;
+    i = i+1;
+    assert(b1);   (* safe *)
+    assert(b2);   (* safe *)
+    assert(j>=i); (* safe *)
+    assert(j>=1); (* safe *)
+    assert(i==j); (* unsafe *)
+  }
+
+  return i;
+}

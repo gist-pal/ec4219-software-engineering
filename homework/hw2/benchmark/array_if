@@ -5,14 +5,14 @@ array_if (int i) returns (int rv) {
   int[10] a;
 
   if (i > 9) {
-    assert(i >= 0 && i < len(a)); (* false *)
+    assert(i >= 0 && i < len(a)); (* unsafe *)
   }
   else {
     if ( i < 0 ) {
-      assert(i >= 0 && i < len(a)); (* false *)
+      assert(i >= 0 && i < len(a)); (* unsafe *)
     }
 	else { (* i>=0 && i <= 9 *)
-      assert(i >= 0 && i < len(a)); (* true *)
+      assert(i >= 0 && i < len(a)); (* safe *)
 	}
   }
 
